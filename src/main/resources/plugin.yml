@@ -1,0 +1,30 @@
+name: SoulsPlugin
+version: '1.0-Alpha'
+main: xyz.fursmp.souls.SoulsPlugin
+api-version: 1.18
+authors: [ GaryCraft ]
+description: A customization Plugin that allows multiple mechanics added to FurSMP
+website: www.fursmp.xyz
+commands:
+  spawnmob:
+    description: Spawns a custom FurSMP mob
+    usage: /spawnmob <mob>
+    aliases: [ sm ]
+    permission: fursmp.souls.commands.spawnmob
+    category: Spawning
+    arguments:
+      - mob:
+          type: string
+          description: The name of the mob to spawn
+          required: true
+  getCustomItem:
+    description: Gets a Custom Item
+    usage: /getCustomItem <ID>
+    aliases: [ gci ]
+    permission: fursmp.souls.commands.getcustomitem
+    category: Items
+    arguments:
+      - ID:
+        type: string
+        description: The ID of the item to get
+        required: true
